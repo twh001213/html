@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <form method="get" action="registration.php">
+        帳號：<input type="text" name="id"><br>
+        性別：<input type="radio" name="sex" value="M">男 
+             <input type="radio" name="sex" value="F" checked>女 <br>
+        興趣：<input type="checkbox" name="interest" value="tv">看書 
+           <input type="checkbox" name="interest" value="movie" checked>打球
+           <input type="checkbox" name="interest" value="bike">開車 <br>
+        居住地：<select name="county">
+            <option value="taoyuan">台北</option>
+            <option value="hsinchu" selected>新北</option>
+            <option value="miaoli">台中</option>       
+        </select> <br>
+        自傳：<br>
+        <textarea name="autobiography" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="註冊"> 
+        <input type="reset" value="清除">
+        
+        </form>
+    </body>
+</html>
+<!---基本來說單行的表單文字輸入欄位，語法就僅有這幾個重要的參數，首先是 input="text" 是最重要的，name 是給這個欄位一個名稱，value 是給這個欄位一個值，通常若是要給網友輸入資料的欄位，value 可以不用寫。
+HTML select option 是下拉式選單，通常用在表單（HTML Form）中，可以自己設定選項（option），每個選項給不同的值
+>
